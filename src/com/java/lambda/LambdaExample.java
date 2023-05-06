@@ -2,6 +2,9 @@ package com.java.lambda;
 
 interface Shape{
     void draw();
+    default void m1(){
+        System.out.println("m1 method");
+    }
 }
 
 class Rectangle implements Shape{
